@@ -14,11 +14,11 @@ startCounter =0
 # CONNECT TO TELLO
 me = Tello()
 me.connect()
-me.for_back_velocity = 0
-me.left_right_velocity = 0
-me.up_down_velocity = 0
-me.yaw_velocity = 0
-me.speed = 0
+# me.for_back_velocity = 0
+# me.left_right_velocity = 0
+# me.up_down_velocity = 0
+# me.yaw_velocity = 0
+# me.speed = 0
 
 
 
@@ -169,31 +169,31 @@ while True:
     display(imgContour)
 
     ################# FLIGHT
-    if startCounter == 0:
-       me.takeoff()
-       startCounter = 1
+    # if startCounter == 0:
+    #    me.takeoff()
+    #    startCounter = 1
 
 
-    if dir == 1:
-       me.yaw_velocity = -60
-    elif dir == 2:
-       me.yaw_velocity = 60
-    elif dir == 3:
-       me.up_down_velocity= 60
-    elif dir == 4:
-       me.up_down_velocity= -60
-    else:
-       me.left_right_velocity = 0; me.for_back_velocity = 0;me.up_down_velocity = 0; me.yaw_velocity = 0
+    # if dir == 1:
+    #    me.yaw_velocity = -60
+    # elif dir == 2:
+    #    me.yaw_velocity = 60
+    # elif dir == 3:
+    #    me.up_down_velocity= 60
+    # elif dir == 4:
+    #    me.up_down_velocity= -60
+    # else:
+    #    me.left_right_velocity = 0; me.for_back_velocity = 0;me.up_down_velocity = 0; me.yaw_velocity = 0
    # SEND VELOCITY VALUES TO TELLO
-    if me.send_rc_control:
-       me.send_rc_control(me.left_right_velocity, me.for_back_velocity, me.up_down_velocity, me.yaw_velocity)
-    print(dir)
+    # if me.send_rc_control:
+    #    me.send_rc_control(me.left_right_velocity, me.for_back_velocity, me.up_down_velocity, me.yaw_velocity)
+    # print(dir)
 
     stack = stackImages(0.9, ([img, result], [imgDil, imgContour]))
     cv2.imshow('Horizontal Stacking', stack)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
-        me.land()
+        # me.land()
         break
 
 # cap.release()

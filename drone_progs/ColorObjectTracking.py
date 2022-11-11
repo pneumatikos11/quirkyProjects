@@ -1,9 +1,17 @@
+from djitellopy import Tello
 import cv2
 import numpy as np
 
+me = Tello()
+me.connect()
+print(me.get_battery())
+
+me.streamoff()
+me.streamon()
+
 frameWidth = 640
 frameHeight = 480
-cap = cv2.VideoCapture(1)
+cap = cv2.VideoCapture(0)
 cap.set(3, frameWidth)
 cap.set(4, frameHeight)
 
