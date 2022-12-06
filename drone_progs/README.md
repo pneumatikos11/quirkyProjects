@@ -17,8 +17,9 @@ There is a chance that you may run into some failures and errors including:
 	2. Check for the latest version of the firmware and install it. Again, through the Tello mobile app. 
 	3. Check if the marked and unmarked propellers are placed in their correct positions where the blades of a kind are placed diagonal to each other. 
 	Check this link for a more in-depth guide to troubleshooting your problem [here](https://lccsdrone.com/tello-drone-not-taking-off-and-flipping-over/). 
+- Incase the drone blades break you can print new ones from files found https://www.thingiverse.com/thing:3548275
 	
 #  Main Goal 
 The main goal of this repository or app is to do multiple projects at once within the app; kind of like creating a menu and selecting what mode the drone should be in to execute the app. The app is going to be made with Tkinter into an interface as a desktop app primarily for Windows 10 and above (I cannot guarantee it will look good on Mac).  If you would like to contribute, please, do not hesitate to. Thanks for looking through this repo!
 
-- Incase the drone blades break you can print new ones from files found https://www.thingiverse.com/thing:3548275
+
