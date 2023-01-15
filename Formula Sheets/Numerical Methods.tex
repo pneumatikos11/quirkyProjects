@@ -1,0 +1,58 @@
+\documentclass[twocolumn]{article}
+\usepackage[portrait,margin=2cm]{geometry}
+\usepackage{amsmath}
+
+\title{Numerical Methods Formula Sheet}
+\author{Kwabena Afari Boateng}
+\date{\today}
+\begin{document}
+	
+	\maketitle
+	$$f (x_{i+1})  \approx  f(x_i) + hf'(x_i) + \frac{h^2f''(x_i)}{2!} + \frac{h^3f'''(x_i)}{3!} + ... + \frac{h^nf^n(x_i)}{n!}$$
+	
+	Taylor series with $x_i = 0$, $x_{i+1} = x$ and $h=x$
+	$$\epsilon_s = (0.5 \times 10^{2-n})\%$$
+	$$f'(x_i) = \frac{f(x_{i+1}) - f(x_i)}{h} + O(h)$$
+	$$f'(x_i) = \frac{f(x_{i}) - f(x_{i-1})}{h} + O(h)$$
+	$$f'(x_i) = \frac{f(x_{i+1}) - f(x_{i-1})}{h} - O(h^2)$$
+	$$\epsilon_T = \frac{\text{true value} - \text{approx value}}{\text{true value}}\times 100\%$$
+	$$\epsilon_T = \frac{\text{present approx} - \text{previous approx}}{\text{present approx}}\times 100\%$$
+	\newline
+	
+	$$x_r = \frac{x_u+x_l}{2}$$
+	$$f(x_l)\times f(x_u) < 0$$
+	$$x_r = x_u - \frac{f(x_u)(x_l-x_u)}{f(x_l)-f(x_u)}$$
+	$$f(x_l)\times f(x_u) < 0$$
+	$$x_r = x_u - \frac{f(x_u)(x_l-x_u)}{f(x_l)-f(x_u)}$$
+	$$f(x_l)\times f(x_u) < 0$$
+	$$x_{i+1} = x_i - \frac{f(x_i)}{f'(x_i)}$$
+	
+	$$e^x = 1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \frac{x^4}{4!} + ... \frac{x^n}{n!}$$
+	$$I = \frac{b-a}{2}(f(a) + f(b))$$
+	$$E_t = -\frac{(b-a)^3 f''(\xi)}{12}$$
+	$$f^x(\xi) = \frac{\int_a^b{f^x(x)}}{b-a}$$
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	$$ x_{i+1} = x_i - \frac{\delta x_i \times f(x_i)}{f(x_i+\delta x_i)-f(x_i)}$$
+	$$\Huge x_{i+1} = $$
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	\\
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+	\\
+	$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+
+$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+
+$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+
+$$I = \frac{b-a}{2n}(f(x_0) + 2 \sum^{n-1}_{i-1} f(x_i) + f(x_n))$$
+
+
+\end{document}
