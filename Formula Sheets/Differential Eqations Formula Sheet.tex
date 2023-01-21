@@ -1,19 +1,54 @@
 \documentclass[twocolumn]{article}
-\usepackage[portrait,margin=2cm]{geometry}
+\usepackage[portrait,margin=1cm]{geometry}
 \usepackage{amsmath}
-
+\usepackage[most]{tcolorbox}
+\newgeometry{left=2.5cm}
 \title{Differential Equations Formula Sheet}
 \author{Kwabena Afari Boateng}
+\newtcolorbox{mytextbox}[1][]{%
+	rounded corners,
+	enhanced,
+	colback=white,
+	height=7.5cm,
+	attach title to upper,
+	#1
+}
+
+\newcommand*{\mywbox}{%
+	\tcboxmath[colback=white, colframe=black, height=4cm, size=fbox, arc=3pt, boxrule=0.8pt, breakable = true]%
+}
+
 \begin{document}
-	Fourier Series
-	$$f(x+T) = f(x)$$
-	$$T = \text{Period}$$
-	$$f(x)=a_0 + \sum^{\infty}_{n=1} (a_n cos(nx) + b_n sin(nx))$$
-	$$a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)dx$$
-	$$a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) cos(nx)dx$$
-	$$b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) sin(nx)dx$$
-	where n = 1,2,3...
-	
-	\maketitle
-	
+	$$\mywbox{
+		f(x+T) = f(x)\newline
+		T = \text{Period} \\
+		f(x) = a_0 + \sum^{\infty}_{n=1} (a_n cos(nx) + b_n sin(nx)) \\
+		a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)dx\\
+		a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) cos(nx)dx\\
+		b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) sin(nx)dx\\
+		\text{where n = 1,2,3...}	\
+	}$$
+%	 \mywbox{
+		$$f(x+T) = f(x)\newline$$
+		$$T = \text{Period} \\$$
+		$$f(x) = a_0 + \sum^{\infty}_{n=1} (a_n cos(nx) + b_n sin(nx)) \\$$
+		$$a_0 = \frac{1}{2\pi} \int_{-\pi}^{\pi} f(x)dx\\$$
+		$$a_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) cos(nx)dx\\$$
+		$$b_n = \frac{1}{\pi} \int_{-\pi}^{\pi} f(x) sin(nx)dx\\$$
+		$$\text{where n = 1,2,3...}	\\$$
+%	}
+	\begin{alignat*}{2}
+		&\text{Change in concentration} = \text{rate in - rate out}\\
+		&\text{if } \frac{dy}{dx} = p(x)q(y) \text{ or } p(x) +q(y)\frac{dy}{dx}\text{ then;}\\
+		&\int q(y)^{-1} dy = \int p(x) dx\\
+		&\text{if } \frac{dy}{dx} + p(t)y = g(t)\text{ then;}\\
+		&IF \times y = \int IF \times q(t) dt \\
+		&\text{where } IF = e^{\int p(t)dt}\\
+		 &\text{if } (x, y) + N(x, y)y' = 0 \text{ then} \\
+		&\frac{\delta \psi}{\delta x} = M(x, y) \\
+		&\frac{\delta \psi}{\delta y} = N(x, y) \\
+		&\frac{d\mu}{dx} = \frac{M_y - N_x}{N}\mu \\
+		&\mu(x, y)M(x, y) + \mu(x, y)N(x, y)y' = 0  \\
+		&\frac{1}{1-x} = \sum_{m=0}^{\infty} x^m = 1+x+x^2...\\
+	\end{alignat*}
 \end{document}
